@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mântuirea sufletului</title>
+    <title>Mântuirea Sufletului</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Mantuirea Sufletului</h1>
-            <nav>
+            <div class="menu-button">
+                <button id="menu-toggle">☰ Meniu</button>
+            </div>
+            <h1>Mântuirea Sufletului</h1>
+            <nav id="main-menu" class="hidden">
                 <ul>
                     <li><a href="#home">Acasă</a></li>
                     <li><a href="#articole">Articole</a></li>
-                    <li><a href="#despre-noi">Despre Noi</a></li>
+                    <li><a href="#rugaciuni">Rugăciuni</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -24,7 +27,8 @@
     <section id="home">
         <div class="container">
             <h2>Bine ai venit pe Blogul nostru!</h2>
-            <p>Aici vei găsi articole interesante pe diverse teme. Urmărește-ne și pe Facebook!</p>
+            <p>Descoperă articole și rugăciuni care inspiră sufletul și te ajută să te apropii de Dumnezeu.</p>
+            <img src="spiritual.jpg" alt="Imagine spirituală" class="main-image">
         </div>
     </section>
 
@@ -42,18 +46,16 @@
         </div>
     </section>
 
-<section id="Rugăciuni">
-    <h2>Rugăciuni</h2>
-    <div class="rugăciune">
-        <h3>Rugăciune Întru Cinstirea Și Pomenirea Nașterii Macii Domnului</h3>
-        <p>
-            O, Preasfântă și Preacurată Fecioară Maria, născută din părinți drepți și fără păcat…
-            <a href="rugaciune-nasterea-marii-domnului.html" class="button">Citește mai mult...</a>
-        </p>
-    </div>
-</section>
-        
-</section>
+    <section id="rugaciuni">
+        <div class="container">
+            <h2>Rugăciuni</h2>
+            <div class="rugaciune">
+                <h3>Rugăciune Întru Cinstirea Și Pomenirea Nașterii Macii Domnului</h3>
+                <p>O, Preasfântă și Preacurată Fecioară Maria, născută din părinți drepți și fără păcat… <a href="rugaciune-nasterea-marii-domnului.html" class="button">Citește mai mult...</a></p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
@@ -67,5 +69,11 @@
             <p>&copy; 2024 Blogul Meu. Toate drepturile rezervate.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
