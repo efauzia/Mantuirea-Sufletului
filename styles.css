@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #faf3e0; /* Sfondo chiaro e neutro */
+}
+
+header {
+    background: #c19a6b; /* Colore senape/marrone chiaro */
+    color: #fff; /* Testo bianco per contrasto */
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem; /* Testo un po' più grande per risalto */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Testo bianco per contrasto */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Effetto hover in oro/giallo */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #c19a6b; /* Linea divisoria in senape */
+    background-color: #fff5e1; /* Sfondo tenue senape/giallo chiaro */
+}
+
+section h2 {
+    text-align: center;
+    color: #c19a6b; /* Titolo in senape */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: #c19a6b; /* Sfondo footer in senape */
+    color: #fff; /* Testo bianco */
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+article h3 {
+    color: #c19a6b; /* Titoli articoli in senape */
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    color: #333; /* Testo scuro per leggibilità */
+}
+
+article a {
+    color: #ffd700; /* Link in oro/giallo */
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline; /* Sottolineatura sui link quando passati con il mouse */
+}
