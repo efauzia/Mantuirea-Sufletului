@@ -8,33 +8,24 @@
 </head>
 <body>
     <header>
-        
+        <div class="menu-button">
+            <button id="menu-toggle">☰ Meniu</button>
         </div>
-        <div class="container">
-            <div class="menu-button">
-                <button id="menu-toggle">☰ Meniu</button>
-            </div>
-            <h1>Mântuirea Sufletului</h1>
-            <nav id="main-menu" class="hidden">
-                <ul>
-                    <li><a href="#home">Acasă</a></li>
-                    <li><a href="#articole">Articole</a></li>
-                    <li><a href="#rugaciuni">Rugăciuni</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Mântuirea Sufletului</h1>
+        <nav id="main-menu" class="hidden">
+            <ul>
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#articole">Articole</a></li>
+                <li><a href="#rugaciuni">Rugăciuni</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home">
         <div class="container">
             <h2>Bine ai venit!</h2>
             <p>Descoperă articole inspiratoare și rugăciuni care îți vor încălzi sufletul și te vor apropia de lumină.</p>
-            <div class="home-images">
-                <img src="spiritual1.jpg" alt="Imagine spirituală 1">
-                <img src="spiritual2.jpg" alt="Imagine spirituală 2">
-                <img src="spiritual3.jpg" alt="Imagine spirituală 3">
-            </div>
         </div>
     </section>
 
@@ -82,28 +73,9 @@
 
     <!-- JavaScript -->
     <script>
-        // Menu Toggle
         document.getElementById('menu-toggle').addEventListener('click', function() {
             document.getElementById('main-menu').classList.toggle('hidden');
         });
-
-        // Slideshow
-        let slideIndex = 0;
-
-        function showSlides() {
-            const slides = document.querySelectorAll('.slide');
-            slides.forEach(slide => slide.style.display = 'none'); // Nasconde tutte le slide
-
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1; // Torna alla prima slide
-            }
-
-            slides[slideIndex - 1].style.display = 'block'; // Mostra la slide corrente
-            setTimeout(showSlides, 4000); // Cambia slide ogni 4 secondi
-        }
-
-        showSlides(); // Avvia lo slideshow
     </script>
 </body>
 </html>
