@@ -131,3 +131,23 @@ footer {
 footer p {
     margin: 0;
 }
+/* Stili specifici per la pagina degli articoli */
+main {
+    background-color: #fff5e1;
+    color: #5a4234;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    text-align: center;
+    color: #8b5e3c;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+article {
+    line-height: 1.8;
+    text-align: justify;
+}
