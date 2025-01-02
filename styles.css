@@ -3,19 +3,40 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #faf3e0; /* Sfondo chiaro e neutro */
+    background-color: #faf3e0; /* Sfondo neutro */
 }
 
 header {
-    background: #c19a6b; /* Colore senape/marrone chiaro */
-    color: #fff; /* Testo bianco per contrasto */
+    background: #8b5e3c; /* Marrone spirituale */
+    color: #fff;
     padding: 1rem 0;
+    position: relative;
 }
 
 header h1 {
     text-align: center;
     margin: 0;
-    font-size: 2rem; /* Testo un po' più grande per risalto */
+    font-size: 2rem;
+}
+
+.menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-button button {
+    background: #d4a373;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu-button button:hover {
+    background: #b68c59;
 }
 
 nav ul {
@@ -23,6 +44,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 1rem 0 0;
 }
 
 nav ul li {
@@ -30,14 +52,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Testo bianco per contrasto */
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Effetto hover in oro/giallo */
+    color: #ffd700;
+}
+
+.hidden {
+    display: none;
 }
 
 .container {
@@ -50,43 +76,63 @@ nav ul li a:hover {
 
 section {
     padding: 2rem 0;
-    border-bottom: 1px solid #c19a6b; /* Linea divisoria in senape */
-    background-color: #fff5e1; /* Sfondo tenue senape/giallo chiaro */
+    border-bottom: 1px solid #d4a373;
+    background-color: #fff5e1;
 }
 
 section h2 {
     text-align: center;
-    color: #c19a6b; /* Titolo in senape */
+    color: #8b5e3c;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+}
+
+.main-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    background: #c19a6b; /* Sfondo footer in senape */
-    color: #fff; /* Testo bianco */
+    background: #8b5e3c;
+    color: #fff;
     padding: 1rem 0;
-    margin-top: 1rem;
 }
 
 footer p {
     margin: 0;
 }
 
-article h3 {
-    color: #c19a6b; /* Titoli articoli in senape */
+.rugaciune {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #d4a373;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.rugaciune h3 {
+    color: #8b5e3c;
     margin-bottom: 0.5rem;
 }
 
-article p {
-    color: #333; /* Testo scuro per leggibilità */
+.rugaciune p {
+    color: #555;
 }
 
-article a {
-    color: #ffd700; /* Link in oro/giallo */
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #d4a373;
+    color: #fff;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-article a:hover {
-    text-decoration: underline; /* Sottolineatura sui link quando passati con il mouse */
+.button:hover {
+    background-color: #b68c59;
 }
