@@ -144,3 +144,38 @@ footer {
 footer p {
     margin: 0;
 }
+#main-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Animazione fluida */
+    background-color: #d4a373; /* Sfondo del menu */
+    padding: 0 1rem;
+}
+
+#main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+}
+
+#main-menu ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#main-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Quando il menu è attivo */
+#main-menu.active {
+    max-height: 200px; /* Altezza sufficiente per mostrare i link */
+}
