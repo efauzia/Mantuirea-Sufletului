@@ -9,16 +9,16 @@
 <body>
     <header>
         <div class="slideshow-container">
-    <div class="slide fade">
-        <img src="image1.jpg" alt="Imagine spirituală 1">
-    </div>
-    <div class="slide fade">
-        <img src="image2.jpg" alt="Imagine spirituală 2">
-    </div>
-    <div class="slide fade">
-        <img src="image3.jpg" alt="Imagine spirituală 3">
-    </div>
-</div>
+            <div class="slide fade">
+                <img src="image1.jpg" alt="Imagine spirituală 1">
+            </div>
+            <div class="slide fade">
+                <img src="image2.jpg" alt="Imagine spirituală 2">
+            </div>
+            <div class="slide fade">
+                <img src="image3.jpg" alt="Imagine spirituală 3">
+            </div>
+        </div>
         <div class="container">
             <div class="menu-button">
                 <button id="menu-toggle">☰ Meniu</button>
@@ -89,35 +89,30 @@
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
+        // Menu Toggle
         document.getElementById('menu-toggle').addEventListener('click', function() {
             document.getElementById('main-menu').classList.toggle('hidden');
         });
-    </script>
-    
-    <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        const menu = document.getElementById('main-menu');
-        menu.classList.toggle('active'); // Aggiunge/rimuove la classe active
-    });
-</script>
-    <script>
-    let slideIndex = 0;
 
-    function showSlides() {
-        const slides = document.querySelectorAll('.slide');
-        slides.forEach(slide => slide.style.display = 'none'); // Nascondi tutte le slide
+        // Slideshow
+        let slideIndex = 0;
 
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1; // Torna alla prima slide
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.style.display = 'none'); // Nasconde tutte le slide
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Torna alla prima slide
+            }
+
+            slides[slideIndex - 1].style.display = 'block'; // Mostra la slide corrente
+            setTimeout(showSlides, 4000); // Cambia slide ogni 4 secondi
         }
 
-        slides[slideIndex - 1].style.display = 'block'; // Mostra la slide corrente
-        setTimeout(showSlides, 4000); // Cambia slide ogni 4 secondi
-    }
-
-    showSlides(); // Avvia lo slideshow
-</script>
+        showSlides(); // Avvia lo slideshow
+    </script>
 </body>
 </html>
