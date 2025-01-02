@@ -83,5 +83,12 @@
             document.getElementById('main-menu').classList.toggle('hidden');
         });
     </script>
+    
+    <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('main-menu');
+        menu.classList.toggle('active'); // Aggiunge/rimuove la classe active
+    });
+</script>
 </body>
 </html>
