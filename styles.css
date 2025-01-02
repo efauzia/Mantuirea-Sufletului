@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
-    background-color: #fdf6e3; /* Sfondo caldo e spirituale */
-    color: #5a4234; /* Testo in marrone tenue */
+    background-color: #fdf6e3;
+    color: #5a4234;
 }
 
 header {
-    background: #d4a373; /* Marrone chiaro */
+    background: #d4a373;
     color: #fff;
     padding: 1rem 0;
     position: relative;
@@ -74,19 +74,6 @@ nav ul li a:hover {
     padding: 1rem 0;
 }
 
-.home-images {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
-}
-
-.home-images img {
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 section {
     margin: 2rem 0;
     padding: 2rem;
@@ -143,39 +130,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-#main-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out; /* Animazione fluida */
-    background-color: #d4a373; /* Sfondo del menu */
-    padding: 0 1rem;
-}
-
-#main-menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column; /* Disposizione verticale */
-}
-
-#main-menu ul li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-#main-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-#main-menu ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Quando il menu è attivo */
-#main-menu.active {
-    max-height: 200px; /* Altezza sufficiente per mostrare i link */
 }
