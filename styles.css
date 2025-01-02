@@ -179,3 +179,32 @@ footer p {
 #main-menu.active {
     max-height: 200px; /* Altezza sufficiente per mostrare i link */
 }
+/* Stili per lo slideshow */
+.slideshow-container {
+    max-width: 100%; /* Adatta la larghezza dello slideshow */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Nascondi le immagini fuori dall'area visibile */
+    border-radius: 10px; /* Bordo arrotondato per un look moderno */
+}
+
+.slide {
+    display: none; /* Nascondi tutte le immagini di default */
+    width: 100%; /* Immagini adattate alla larghezza dello slideshow */
+}
+
+.slide img {
+    width: 100%; /* Assicura che le immagini riempiano il contenitore */
+    height: auto; /* Mantieni le proporzioni */
+    display: block;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+/* Effetto dissolvenza */
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
